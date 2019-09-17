@@ -1,0 +1,418 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #100f0f;
+  background-image: url(/images/background1.png);
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-right: 0.1%;
+  margin-left: 0.1%;
+}
+
+.førstebilleder {
+  margin-top: 20%;
+}
+.content {
+  width: 100%;
+  height: auto;
+  margin-top: 35%;
+  margin-left: 0.2%;
+  max-width: 100%;
+  padding: 40px 0 40px 0;
+  padding-bottom: 0%;
+  overflow: hidden;
+}
+
+.hero-back {
+  width: 100%;
+  height: calc(100vh);
+  background: url(/images/kevin_bygning_1.png) no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+}
+
+h1 {
+  margin-top: -2%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 50;
+  margin-bottom: -2%;
+}
+
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  line-height: 35px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-bottom: 10%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.hero-back img {
+  margin-top: 35%;
+  width: 70%;
+  position: absolute;
+  bottom: -5%;
+  left: -40%;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+}
+
+.layer2 img {
+  margin-top: 90%;
+  width: 70%;
+  position: absolute;
+  bottom: -2%;
+  left: 70%;
+  right: 0;
+  margin: auto;
+  z-index: 99;
+}
+
+video {
+  width: 110%;
+  position: absolute;
+  bottom: -27%;
+  left: -5%;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  opacity: 0;
+}
+
+.billedeskift1 {
+  margin-top: 0%;
+  margin-left: 35%;
+  width: 45%;
+  position: absolute;
+  transition: opacity 2s ease-in;
+}
+
+.billedeskif1.img + .billedeskif1.img {
+  opacity: 0;
+}
+
+#billede2 {
+  margin-top: 90%;
+  width: 45%;
+  height: auto;
+  z-index: 98;
+  opacity: 1;
+  margin-bottom: -50%;
+  margin-left: 2%;
+}
+
+#billede3 {
+  position: relative;
+  margin-top: 0%;
+  margin-left: 45%;
+  margin-bottom: -150%;
+  width: 40%;
+  height: auto;
+  z-index: 98;
+  opacity: 1;
+}
+
+/*--------------------------------slides-------------------------------------------*/
+
+#slideshowdrag {
+  margin-top: 10%;
+  width: 100%;
+  margin-bottom: 0%;
+  position: 1;
+}
+#slides {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 550px;
+  border-radius: 0%;
+  white-space: nowrap;
+  margin-left: 0%;
+  font-size: 0;
+  transform: translateX(0);
+  overflow: none;
+}
+.slide:hover {
+  transform: scale(1.4);
+  color: rgba(26, 25, 25, 0.763);
+}
+
+.slide {
+  width: 70%;
+  height: 115%;
+  border-radius: 0%;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-color: #100f0f6e;
+  transition: all 0.2s ease-in-out;
+}
+
+.animate {
+  transition: all 0.5s ease-out;
+}
+
+.slide:nth-child(1) {
+  background-image: url(/images/musik.png);
+}
+.slide:nth-child(2) {
+  background-image: url(/images/teater.png);
+}
+.slide:nth-child(3) {
+  background-image: url(/images/sport.png);
+}
+.slide:nth-child(4) {
+  background-image: url(/images/musik.png);
+}
+.slide:nth-child(5) {
+  background-image: url(/images/teater.png);
+}
+.slide:nth-child(6) {
+  background-image: url(/images/sport.png);
+}
+
+.slide:nth-child(7) {
+  background-image: url(/images/musik.png);
+}
+.slide:nth-child(8) {
+  background-image: url(/images/teater.png);
+}
+.slide:nth-child(9) {
+  background-image: url(/images/sport.png);
+}
+.slide:nth-child(10) {
+  background-image: url(/images/musik.png);
+}
+.slide:nth-child(11) {
+  background-image: url(/images/teater.png);
+}
+.slide:nth-child(12) {
+  background-image: url(/images/sport.png);
+}
+
+/*-----------------------billedeboks----------------------------------------------------*/
+
+.billedeboks {
+  margin-right: 0%;
+  margin-top: 25%;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 0%;
+}
+
+#zoombillede {
+  width: 100%;
+  animation: scale 20s linear infinite;
+  z-index: 9;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+#tekstbilledeboks {
+  position: relative;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-bottom: -40%;
+  z-index: 9999;
+  font-size: 52px;
+  font-weight: lighter;
+  text-shadow: -1px 0 black, 0 1px black, 4px 0 black, 0 -1px black;
+}
+
+/*-----------------------billedeboks---- Jesson--- tekst ---------------------------------------------*/
+#indhold {
+  background-image: url(/images/johannes_2.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+
+#typing {
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7%;
+  position: relative;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+#typing::after {
+  content: ""; /*  hvor cursor er placeret */
+  position: absolute;
+  width: 1px;
+  height: 5%;
+  right: -5px;
+  border-right: 2px solid black;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-----------------------mouserover -- tekst-------------------------------------------------*/
+
+#indhold {
+  width: 100%;
+  height: auto;
+}
+
+#fagtekst {
+  margin-top: 10%;
+  margin-bottom: -8%;
+}
+
+/*-----------------------billedeboks--- tekst-------------------------------------------------*/
+#tekst2 {
+  margin-top: 10%;
+}
+
+/*-----------------------video--- main-------------------------------------------------*/
+#videowrap {
+  margin-top: 0%;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.video2main {
+  margin-left: 5%;
+  width: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+#videoh1 {
+  margin-top: 20%;
+}
+/*fooooooooottter--------------------------------------*/
+
+#sidsteh1 {
+  margin-top: 10%;
+  margin-bottom: -6%;
+}
+
+#glæddigh1 {
+  margin-top: 10%;
+  margin-bottom: -9%;
+}
+
+#info {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.footer-title {
+  font-size: 30px;
+  padding-bottom: 2%;
+}
+
+#tekst-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.info-liste {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 20px;
+  align-content: center;
+}
+
+.info-liste ul {
+  list-style: none;
+}
+.info-liste li {
+  padding-bottom: 2%;
+}
+
+#SOME-info {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.SOME-ikoner {
+  display: flex;
+  flex-direction: row;
+  margin: 0% 0% 0% 20%;
+}
+.SOME-ikoner a {
+  width: 100%;
+}
+
+.SOME-ikoner img {
+  width: 25%;
+}
+
+/*-----------------------start video in view----------------------------------------------*/
+
+/*-----------------------At media bigscreeen----------------------------------------------*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1000000px) {
+  #tekstbilledeboks {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #slides {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+  }
+
+  #typing {
+    margin-left: 2%;
+  }
+}
+
+video {
+  bottom: -32%;
+}
+
+#slideshowdrag {
+  width: 100%;
+}
+#slides {
+  width: 30%;
+}
+
+.slide {
+  width: 70%;
+  height: 73%;
+  margin-right: 10%;
+}
